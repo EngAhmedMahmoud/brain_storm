@@ -1,0 +1,20 @@
+{
+  "name": "brain_storm",
+  "version": "1.0.0",
+  "description": "Nodejs libraries for rapid development developed in a component based strategy in isolated  microservice ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngAhmedMahmoud/brain_storm.git"
+  },
+  "author": "EngAhmedMahmoud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EngAhmedMahmoud/brain_storm/issues"
+  },
+  "homepage": "https://github.com/EngAhmedMahmoud/brain_storm#readme"
+}
