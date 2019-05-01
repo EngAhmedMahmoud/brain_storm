@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/EngAhmedMahmoud/brain_storm/issues"
   },
-  "homepage": "https://github.com/EngAhmedMahmoud/brain_storm#readme"
+  "homepage": "https://github.com/EngAhmedMahmoud/brain_storm#readme",
+  "dependencies": {
+    "mongoose": "^5.5.5"
+  }
 }
