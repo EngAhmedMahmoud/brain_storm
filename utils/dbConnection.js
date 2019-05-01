@@ -7,7 +7,8 @@ const DB_NAME = process.env.DB_NAME;
 //create connection
 const db_connection = mongoose
   .connect(`${DB_URL}${DB_NAME}`, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
   })
   .then(con => {
     console.log("DB connected successfully");
