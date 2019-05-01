@@ -4,7 +4,6 @@ require("dotenv/config");
 const db_connection = require("./utils/dbConnection");
 const PORT = process.env.SERVER_PORT;
 const HOST = process.env.SERVER_HOST;
-
 //db connection
 db_connection.db_connection;
 //create express app
