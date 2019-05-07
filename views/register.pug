@@ -1,0 +1,17 @@
+include partials/header
+.container-fluid
+    .row.justify-content-center
+        .col-6
+            form(method="post",action="/users/register")
+                .form-group
+                    label(for='userName') User name
+                    input#userName.form-control(type='text', placeholder='Enter user name',name="userName")
+                .form-group
+                    label(for='email') Email address
+                    input#email.form-control(type='email', placeholder='Enter email',name="email")
+                .form-group
+                    label(for='password') Password
+                    input#password.form-control(type='password', placeholder='Password',name="password")
+                button.btn.btn-primary(type='submit') Register
+
+include partials/footer
