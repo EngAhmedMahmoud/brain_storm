@@ -1,6 +1,6 @@
 "use strict";
 const User = require("./userModel");
-
+const validator = require("./../../utils/validation");
 class UserController {
   /**
    * Add new User
