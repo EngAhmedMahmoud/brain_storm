@@ -1,18 +1,21 @@
 "use strict";
 const validator = require("./../../utils/validation");
-const LANG = "en";
-const getLang = require(`./../../langs/${LANG}.json`);
 class UserValidator {
   validateUser(user) {
-    const errors = [];
-    let { email, userName, password } = user;
-    if (email && !validator.isEmail(email)) {
-      errors.push(getLang.errorMsg.email.notValid);
+    let { email, userName, password, cpassword } = user;
+    //set validation rules
+    const errorMsg = validator.getErrorMsg([
+      validator.isEmail(email, "email"),
+      validator.Required(email, "email"),
+      validator.Required(userName, "userName"),
+      validator.Required(password, "password"),
+      validator.Required(cpassword, "confirmPassword")
+    ]);
+    if (errorMsg.length !== 0) {
+      return errorMsg;
+    } else {
+      //validation done successfully
     }
-    if (!validator.isEmpty(email)) {
-      errors.push(getLang.errorMsg.email.empty);
-    }
-    return errors;
   }
 }
 module.exports = new UserValidator();

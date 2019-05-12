@@ -1,7 +1,12 @@
 {
   "errorMsg": {
-    "email": {
-      "notValid": "البريد الالكترونى غير صحيح"
-    }
+    "isEmail": "غير صحيح",
+    "Required": "مطلوب"
+  },
+  "inputs": {
+    "email": "البريد الالكترونى",
+    "userName": "اسم المستخدم",
+    "password": "كلمه المرور",
+    "confirmPassword": "تأكيد كلمه المرور"
   }
 }

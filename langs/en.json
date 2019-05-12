@@ -1,8 +1,12 @@
 {
   "errorMsg": {
-    "email": {
-      "notValid": "Not valid email!",
-      "empty": "Email is required!"
-    }
+    "isEmail": "Not valid email!",
+    "Required": "is required!"
+  },
+  "inputs": {
+    "email": "Email",
+    "userName": "userName",
+    "password": "password",
+    "confirmPassword": "confirm password"
   }
 }

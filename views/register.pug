@@ -12,6 +12,10 @@ include partials/header
                 .form-group
                     label(for='password') Password
                     input#password.form-control(type='password', placeholder='Password',name="password")
+                .form-group
+                    label(for='cpassword') Confirm Password
+                    input#cpassword.form-control(type='password', placeholder='Confirm Password',name="cpassword")
+                
                 button.btn.btn-primary(type='submit') Register
 
 include partials/footer
